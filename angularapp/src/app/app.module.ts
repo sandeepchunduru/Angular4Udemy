@@ -9,6 +9,7 @@ import { SandboxtwoComponent } from './components/sandboxtwo/sandboxtwo.componen
 import { SandboxthreeComponent } from './components/sandboxthree/sandboxthree.component';
 import { SandboxFourComponent } from './components/sandbox-four/sandbox-four.component';
 import { SandboxFiveComponent } from './components/sandbox-five/sandbox-five.component';
+import { SandboxSixComponent } from './components/sandbox-six/sandbox-six.component';
 
 
 
@@ -20,7 +21,8 @@ import { SandboxFiveComponent } from './components/sandbox-five/sandbox-five.com
     SandboxtwoComponent,
     SandboxthreeComponent,
     SandboxFourComponent,
-    SandboxFiveComponent
+    SandboxFiveComponent,
+    SandboxSixComponent
   ],
   imports: [
     BrowserModule,
