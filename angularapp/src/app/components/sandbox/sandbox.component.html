@@ -1,0 +1,60 @@
+<h1 class="special">Hello {{name}} from HTML File</h1>
+{{people}}
+<ul>
+  <li *ngFor="let person of people">
+    {{person}}
+  </li>
+</ul>
+
+<ul>
+  <li *ngFor="let person of people; let i = index">
+    {{i+1}} {{person}}
+  </li>
+</ul>
+
+<ul>
+  <li *ngFor="let person of people2; let i = index">
+    {{i+1}} {{person.firstName}} {{person.lastName}}
+  </li>
+</ul>
+
+
+<h2> Hello
+  <!--<span *ngIf="showName">{{name}}</span>-->
+  <!--<span *ngIf="!showName">World</span>-->
+
+  <span *ngIf="showName; else  noName">{{name}}</span>
+  <ng-template #noName>World</ng-template>
+
+  <p> Hello {{ showName ? name: 'World' }} </p>
+
+  <hr>
+
+  <div [ngSwitch]="greeting">
+    <div class="blueClass" *ngSwitchCase="'1'" >Hellow Sandeep</div>
+    <div class="greenClass" *ngSwitchCase="'2'" >Study Chunduru</div>
+    <div class="yellowClass" *ngSwitchCase="'3'" >Angular 4</div>
+    <div class="redClass" *ngSwitchDefault>Logging Off</div>
+  </div>
+  <hr>
+<!--
+  <div><img src="{{ imageUrl }}"></div>
+  <div><img [src]="imageUrl"></div>
+  <div><img bind-src="imageUrl"></div>
+<h4> Image Location: <span [textContent]="imageUrl"></span></h4>
+-->
+</h2>
+<hr>
+<h2>Create Post</h2>
+<p [hidden]="isImageUnchanged">Post has been changed, please save</p>
+<button [disabled]="isImageUnchanged">Save</button>
+
+
+
+
+
+
+
+
+
+

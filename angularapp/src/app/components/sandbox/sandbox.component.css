@@ -1,0 +1,31 @@
+
+
+.special{
+  color:orangered;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.blueClass{
+  color:aqua;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.greenClass{
+  color:aquamarine;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.yellowClass{
+  color:gold;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.redClass{
+  color:firebrick;
+  font-size: 20px;
+  text-transform: uppercase;
+}
