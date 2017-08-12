@@ -1,0 +1,21 @@
+<p>
+  sandboxtwo works!
+</p>
+
+<h4 [class.special]="isSpecial" > This Class Binding is special</h4>
+<hr>
+<!--ngClass= CurrentClasses - object created to set the classes-->
+<h4 [ngClass]="currentClasses"> This div is initially special and savable</h4>
+
+<div [style.font-size]="isSpecial ? 'x-large' : 'smaller'" > FontSize depends on isSpecial</div>
+
+<div [ngStyle]="currentStyles" > This div is initially savable and special </div>
+
+
+<p> My Birthday is {{ birthDay | date | uppercase }} </p>
+<p> My Birthday is {{ birthDay | date:"MM-dd-yy" }} </p>
+<p> I was born in {{ birthDay | date:"yyyy" }}</p>
+<p> I love {{ 'cake' | uppercase }} </p>
+<p> I hate {{ 'CATS' | lowercase }} </p>
+<p> Your total is {{ total | currency:"INR":"1" }} </p>
+<p> Our fee is {{ fee | percent }}</p>
